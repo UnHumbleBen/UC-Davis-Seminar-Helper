@@ -1,0 +1,28 @@
+{
+  "manifest_version": 2,
+  "name": "UC Davis Seminar Helper",
+  "version": "1.02",
+  "content_scripts": [
+    {
+      "matches": [
+        "https://my.ucdavis.edu/schedulebuilder/index.cfm?*"
+      ],
+      "js": [
+        "content.js"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+  "browser_action": {
+    "default_icon": "icons/FYS_Symbol-01_0_2_16x16.png"
+  },
+  "icons": {
+    "16": "icons/FYS_Symbol-01_0_2_16x16.png",
+    "48": "icons/FYS_Symbol-01_0_1_48x48.png",
+    "128": "icons/FYS_Symbol-01_0_128x128.png"
+  }
+}
