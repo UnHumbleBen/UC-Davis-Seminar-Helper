@@ -173,7 +173,10 @@ function gotMessage(message, sender, sendResponse) {
       var seminar_name = seminar_data[course_number];
       if (seminar_name != undefined) {
         wrong_name = data_item.getElementsByClassName("data-item-long active")[0].getElementsByClassName("data-row clearfix")[0].getElementsByClassName("float-left")[0].getElementsByClassName("clearfix")[0].getElementsByClassName("data-column title")[1];
-        wrong_name.textContent = seminar_name;
+        wrong_name.textContent = "";
+        var utag = document.createElement('u');
+        utag.innerHTML = seminar_name;
+        wrong_name.appendChild(utag);
 
         data_id = course_id[course_number];
         onclick_str = "window.open('https://ocpweb.ucdavis.edu/api_cms/fys/2/fys-seminar-schedule.cfc?method=getSeminarDetailsDisplay&seminarID="

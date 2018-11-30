@@ -1,7 +1,7 @@
 {
   "manifest_version": 2,
   "name": "UC Davis Seminar Helper",
-  "version": "1.02",
+  "version": "1.3",
   "content_scripts": [
     {
       "matches": [
